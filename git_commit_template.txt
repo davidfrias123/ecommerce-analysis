@@ -1,0 +1,29 @@
+# 🧾 Git Commit Message Template – E-commerce  Analysis
+
+# Format: <type>(<scope>): <short summary>
+# Example: feat(ETL): added function to clean missing values in sales data
+
+# --- Commit Type Keywords ---
+# feat      → new feature
+# fix       → bug fix
+# docs      → documentation changes (README, reports, etc.)
+# style     → formatting (no code logic)
+# refactor  → code improvement without new feature
+# test      → adding/updating tests
+# chore     → maintenance or setup change
+
+# --- Examples ---
+# feat(ETL): implemented customer-sales data merge
+# fix(model): corrected accuracy calculation logic
+# docs(README): updated summary and references
+# refactor(visuals): improved chart layout in Jupyter Notebook
+# style(report): adjusted font and spacing in Word report
+# chore(gitignore): added dataset files to .gitignore
+
+# --- Template ---
+<type>(<scope>): <short summary>
+
+# Optional longer description:
+# - What changed and why
+# - Any related files or dependencies
+# - Next step if applicable

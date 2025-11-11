@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data & exports (keep big files out of Git)
+data/*.csv
+data/*.xlsx
+*.zip
+
+
+# Optional: large binaries (if you want to ignore)
+*.pptx
+*.docx
+*.pdf
