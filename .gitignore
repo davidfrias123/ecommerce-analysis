@@ -1,15 +1,35 @@
-# Python
 __pycache__/
-*.pyc
+*.py[cod]
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+
+# Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+# Ignore virtual environment directories
+.venv/
+env/
+venv/
+# Ignore log files
+*.log
+# Ignore merged data files
+merged_ecommerce_data.csv
+# Ignore figures and reports
+figures/
+reports/*.pdf
 
-# Data & exports (keep big files out of Git)
-data/*.csv
-data/*.xlsx
-*.zip
+
+reports/*.pptx
 
 
-# Optional: large binaries (if you want to ignore)
-*.pptx
-*.docx
-*.pdf
+reports/*.docx
+# Ignore data directories
+data/raw/
+data/processed/
+data/interim/
+data/external/
+
+# Ignore notebooks directory
+notebooks/
