@@ -34,7 +34,6 @@ ecommerce_project/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
-│
 ├── main.py
 ├── ecommerce_Sales_Analysis.ipynb
 │
@@ -44,18 +43,17 @@ ecommerce_project/
 ├── merged_ecommerce_data.csv
 │
 ├── images/
-│ ├── interaction_type_distribution.png
-│ ├── pie_chart.png
-│ ├── monthly_purchase_trend.png
-│ ├── feature_importance.png
-│ ├── predictive_modelling.png
-│ ├── aov_by_payment_method.png
-│ ├── category_conversion_rate.png
-│ └── monthly_trend_top_categories.png
+│   ├── interaction_type_distribution.png
+│   ├── pie_chart.png
+│   ├── monthly_purchase_trend.png
+│   ├── feature_importance.png
+│   ├── predictive_modelling.png
+│   ├── aov_by_payment_method.png
+│   ├── category_conversion_rate.png
+│   └── monthly_trend_top_categories.png
 │
 ├── Ecommerce_Project_Report_Swathi.docx
 └── Ecommerce_Project_Presentation_Swathi.pptx
-
 ---
 
 ## ⚙️ Technologies & Tools Used
@@ -142,7 +140,7 @@ Random Forest Classifier
 ## 📊 Business Insights & Visualizations
 
 ### 1️⃣ Category Conversion Rate (Purchases / Views)
-![Conversion Rate](images/category_conversion_rate.png)
+![Conversion Rate](images/Category_conversion_rate.png)
 
 **Insight:**  
 Footwear & Outerwear show the highest conversion rates.  
