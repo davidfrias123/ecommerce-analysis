@@ -1,37 +1,44 @@
 🛍️ E-commerce Sales Analysis & Predictive Modeling (2024 Dataset)
+
 Author: Swathi Mulkundkar
 Course: Data Analytics with AI – Code Institute
 Submission Date: 14 November 2025
-________________________________________
+
 📘 Project Summary
 
 This project analyzes the 2024 E-commerce Sales dataset using a complete Python-based ETL pipeline built with Pandas, NumPy, and Jupyter Notebook. The merged dataset enabled insights into category conversion rates, payment method behavior, and monthly purchasing trends through visualizations created with Matplotlib, Seaborn, and Plotly. A Random Forest predictive model (Scikit-learn) was developed to explore purchase likelihood and customer behavior patterns. The entire workflow was managed using Git, GitHub, and Agile Kanban boards, ensuring clear tracking, documentation, and iterative development.
 
 🎯 Objectives
-•	Extract, clean, and merge multiple E-commerce datasets (Sales, Customers, Products)
-•	Conduct Exploratory Data Analysis (EDA) to uncover behavioral insights
-•	Visualize key trends using Matplotlib, Seaborn, and Plotly
-•	Build a predictive model to estimate purchase probability
-•	Apply Agile methodology for planning and documentation
-•	Present findings through reports and presentations
+
+Extract, clean, and merge multiple E-commerce datasets (Sales, Customers, Products)
+
+Conduct Exploratory Data Analysis (EDA) to uncover behavioral insights
+
+Visualize key trends using Matplotlib, Seaborn, and Plotly
+
+Build a predictive model to estimate purchase probability
+
+Apply Agile methodology for planning and documentation
+
+Present findings through reports and presentations
 
 📁 Repository Structure
 ecommerce_project/
 │
-├── .gitignore                     # Files and folders excluded from version control
-├── README.md                      # Project documentation (overview, setup, results)
-├── requirements.txt               # Python dependencies for reproducibility
+├── .gitignore
+├── README.md
+├── requirements.txt
 │
-├── main.py                        # ETL pipeline: load, clean, merge datasets
-├── ecommerce_Sales_Analysis.ipynb # Full EDA, insights, and visualizations notebook
+├── main.py
+├── ecommerce_Sales_Analysis.ipynb
 │
-├── customer_details.csv           # Customer dataset (raw)
-├── product_details.csv            # Product dataset (raw)
-├── sales_data.csv                 # Sales interactions dataset (raw)
-├── merged_ecommerce_data.csv      # Final cleaned & merged dataset (post-ETL)
+├── customer_details.csv
+├── product_details.csv
+├── sales_data.csv
+├── merged_ecommerce_data.csv
 │
-├── Ecommerce_Project_Report_Swathi.docx   # Detailed project documentation
-└── Ecommerce_Project_Presentation_Swathi.pptx # Final presentation with visuals
+├── Ecommerce_Project_Report_Swathi.docx
+└── Ecommerce_Project_Presentation_Swathi.pptx
 
 ⚙️ Technologies & Tools Used
 Category	Tools / Libraries
@@ -42,168 +49,225 @@ Machine Learning	Scikit-learn (RandomForestClassifier)
 Documentation	Jupyter Notebook, MS Word, PowerPoint
 Project Management	GitHub Projects (Kanban), Agile Sprints
 
-End‑to‑end workflow: **ETL → EDA → Product Insights → Predictive Modeling → Conclusions**.
+Workflow:
+ETL → EDA → Product Insights → Predictive Modeling → Conclusions
 
 🔄 ETL Pipeline Summary
-Extract:
-- Loaded three CSV files from Kaggle: sales_data.csv, customer_data.csv, and product_data.csv
-Transform:
-- Cleaned missing values and duplicates
-- Standardized timestamps and categorical data
-- Merged datasets on unique keys (user id and product id)
-- Created new features (e.g., is_purchase, Month)
-Load:
-- Exported cleaned dataset to merged_ecommerce_data.csv
-Validation:
-- Checked data integrity (shapes, missing values, and logical consistency)
+Extract
 
-________________________________________
+Loaded CSV files from Kaggle
+
+sales_data.csv
+
+customer_data.csv
+
+product_data.csv
+
+Transform
+
+Cleaned missing values and duplicates
+
+Standardized timestamps and categorical variables
+
+Merged datasets on unique keys (user_id, product_id)
+
+Engineered features (e.g., is_purchase, month)
+
+Load
+
+Exported final data to merged_ecommerce_data.csv
+
+Validation
+
+Checked shapes, missing values, and logical consistency
 
 📊 Data Analysis & Visualization
-Key Insights:
-•	Age 25–40 customers make the most purchases.
+Key Insights
 
-•	Digital payments (PayPal, Credit Card) dominate successful transactions.
+Customers aged 25–40 make the highest number of purchases
 
-•	Top 10 products generate 60% of total sales.
+Digital payments (PayPal, Credit Card) dominate successful transactions
 
-•	Sales spike during Q4 (October–December).
-Example Visualizations:
-1.	Interaction Type Distribution Plotly Histogram:(images/interaction_type_distribution.png)
+Top 10 products generate nearly 60% of total sales
 
-2.	Customer Gender Distribution Pie Chart:(images/pie_chart.png)
+Sales spike during Q4 (October–December)
 
-3.	Monthly Purchase Trend Line Chart:(images/monthly_purchase_trend.png)
+Example Visualizations
 
-4.	Feature Importance Bar Chart:(images/feature_importance.png)
-📍 Visuals generated in Jupyter Notebook using Matplotlib, Seaborn, and Plotly.
-👉 Visualizations included in report and notebook.
-________________________________________
+Interaction Type Distribution
+images/interaction_type_distribution.png
+
+Customer Gender Distribution
+
+images/pie_chart.png
+
+Monthly Purchase Trend
+
+images/monthly_purchase_trend.png
+
+Feature Importance
+
+images/feature_importance.png
+
+📍 Visuals created using Matplotlib, Seaborn, and Plotly.
+
 🤖 Predictive Modeling
-Goal: Predict whether a user will make a purchase based on demographics and behavior.
-Model Used: Random Forest Classifier
-Features: Age, Gender, Payment Method, Frequency of Purchases
-Target: is_purchase (1 = purchase, 0 = non-purchase)
-Accuracy: ~85% on test data
-Feature Importance Ranking: 1. Frequency of Purchases
-2. Payment Method
-3. Age
-4. Gender
-images/predictive_modelling.png
-_______________________
 
-## 📊 Business Insights and Visualizations
+Goal: Predict the likelihood of purchase
 
-### 1️⃣ Category Conversion Rate (Purchases / Views)
+Model: Random Forest Classifier
 
-![Category Conversion Rate](images/category_conversion_rate.png)
+Features:
 
-**Insight:**
-Top categories like **Footwear** and **Outerwear** exhibit the highest conversion rates, indicating strong purchase intent after product views.
-**Business Action:** Prioritize promotions and inventory for high-conversion categories.
+Age
 
----
+Gender
 
-### 2️⃣ Average Order Value (AOV) by Payment Method
+Payment Method
 
-![Average Order Value](images/aov_by_payment_method.png)
+Frequency of Purchases
 
-**Insight:**
-**Debit Card** and **Bank Transfer** users record the highest average purchase values ($60–$62).
-**Business Action:** Focus marketing and cashback offers on these payment methods to maximize order value.
+Target: is_purchase (1 = purchase, 0 = no purchase)
 
----
+Accuracy: ~85%
 
-### 3️⃣ Monthly Purchase Trend for Top Categories
+Feature Importance Rank
 
-![Monthly Trend](images/monthly_trend_top_categories.png)
+Frequency of Purchases
 
-**Insight:**
-Sales peaks appear around **March** and **September**, aligning with promotional periods.
-**Business Action:** Plan future marketing campaigns and product launches around these high-activity months.
- 
-  🎯Customer Insights
+Payment Method
 
-Ages 25–40 are the highest purchasing segment
+Age
+
+Gender
+
+📊 Business Insights and Visualizations
+1️⃣ Category Conversion Rate (Purchases / Views)
+images/Category_conversion_rate.png
+
+Insight: Footwear and Outerwear show the highest conversion rates.
+Action: Prioritize stock and promotional spend on high-performing categories.
+
+2️⃣ Average Order Value (AOV) by Payment Method
+images/aov_by_payment_method.png
+Insight: Debit Card and Bank Transfer users yield the highest AOV ($60–$62).
+Action: Offer cashback / reward incentives for high-value payment channels.
+
+3️⃣ Monthly Purchase Trend for Top Categories
+images/monthly_purchase_trend.png
+Insight: Sales peaks occur around March and September.
+Action: Align marketing campaigns with seasonal demand patterns.
+
+🎯 Customer Insights
+
+Ages 25–40 dominate purchase activity
 
 Digital payments → higher conversion
 
-Engagement frequency is the #1 purchase predictor
+Engagement frequency = strongest predictor
 
- 🎯Product Insights
+🎯 Product Insights
 
-Footwear & Outerwear → highest conversion
+Footwear & Outerwear → highest conversions
 
-Accessories → high views, low conversions
+Accessories → high views but low conversions
 
-Some categories produce disproportionate revenue
+Certain categories drive disproportionate revenue
 
 💡 Recommendations
 
-•Promote high-performing categories via paid ads
+Promote high-performing categories with paid ads
 
-•Improve Accessories page quality (images, bundles)
+Improve Accessories product pages (images, bundles)
 
-•Incentivize card/PayPal payments
+Incentivize digital payments (card / PayPal)
 
-•Plan campaigns for seasonal peaks
+Plan seasonal campaigns around peak months
 
-•Retarget high-frequency users
+Retarget high-frequency users
 
-•Build loyalty program for digital wallet users
-________________________________________
+Build loyalty programs around digital wallet users
 
 🧩 Agile Project Management
-•	Managed using GitHub Projects with a Kanban board.
-o	 -Ideation, ETL, and basic visualizations.
-o	 -Advanced visualizations, modeling, and documentation.
-•	Daily reflection logs included time tracking and problem-solving notes.
-Roles practiced: - ETL Specialist – handled data cleaning and preparation.
-- Data Visualization Specialist – created static and interactive charts.
-- Project Manager – planned milestones and documented progress.
 
-________________________________________
+Managed using GitHub Projects (Kanban board)
+
+Sprints included:
+
+ETL
+
+Visualizations
+
+Modeling
+
+Documentation
+
+Daily reflection logs maintained
+
+Roles practiced:
+
+ETL Specialist
+
+Visualization Analyst
+
+Project Manager
 
 🪞 Reflection & Learning
+✔ Key Learnings
 
-Key Learnings: 
-✔ Hands-on experience building an ETL pipeline using Pandas. 
-✔Improved Skills:
-  -Python (Pandas, Numpy)
-  -Data visualization (Seaborn, Matplotlib, Plotly)
-  -Machine learning
-  -GitHub version control
-  -Agile project management
-✔Understood the workflow for predictive analytics using scikit-learn. 
-✔ Enhanced project management discipline through Agile methods.
-✔Challenges:  Handling missing data and inconsistent timestamps.
-✔Merging large datasets efficiently.
-✔Balancing model accuracy and interpretability.
-✔Future Enhancements: Deploy an interactive dashboard using Streamlit or Dash. 
-  - Integrate external datasets (marketing, regional data). 
-  - Use hyperparameter tuning for model optimization.
+Built complete ETL pipeline using Python & Pandas
 
+Improved skills in:
 
-## 📚 References
+Pandas, NumPy
 
-- **Dataset:** [Kaggle – E-commerce Sales Data 2024](https://www.kaggle.com/datasets/datascientist97/e-commerece-sales-data-2024)
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-learn
-- Code Institute Learning Materials
-- **AI Assistance:** Documentation, structure, and visualization design
+Matplotlib, Seaborn, Plotly
 
----
+Machine learning (Scikit-learn)
 
-## 🌟 Acknowledgements
+Git/GitHub version control
 
-Thanks to the **Code Institute Faculty** for guidance.
+Agile workflow
 
----## 🌐 Connect with Me
+✔ Challenges
 
-👩‍💻 **Swathi Mulkundkar**
-📎 [LinkedIn Profile](https://www.linkedin.com/in/swathimulkundkar/)
-💻 [GitHub Portfolio](https://github.com/swathim251205)
+Handling missing data
+
+Fixing timestamp inconsistencies
+
+Merging large datasets
+
+Balancing model accuracy & interpretability
+
+✔ Future Enhancements
+
+Deploy dashboard using Streamlit / Dash
+
+Integrate marketing or regional datasets
+
+Apply hyperparameter tuning
+
+📚 References
+
+Kaggle – E-commerce Sales Data 2024
+
+Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-learn
+
+Code Institute documentation
+
+AI Assistance: Structure & visualization guidance
+
+🌟 Acknowledgements
+
+Special thanks to the Code Institute Faculty for guidance.
+
+🌐 Connect With Me
+
+👩‍💻 Swathi Mulkundkar
+🔗 LinkedIn
+
+💻 GitHub
 
 ⭐ Support
 
 If you found this project helpful, please give it a star on GitHub! ⭐
-
