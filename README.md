@@ -1,8 +1,7 @@
 # 🛍️ E-commerce Sales Analysis & Predictive Modeling (2024 Dataset)
 
 **Author:** Swathi Mulkundkar  
-**Course:** Data Analytics with AI – Code Institute  
-**Submission Date:** 14 November 2025
+
 
 ---
 
@@ -236,15 +235,10 @@ Schedule major campaigns around these months.
 
 - Kaggle – E-commerce Sales Data 2024  
 - Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-learn  
-- Code Institute Learning Resources  
 - **AI Assistance** for documentation and visualization support  
 
 ---
 
-## 🌟 Acknowledgements
-Thanks to the **Code Institute Faculty** for their guidance.
-
----
 
 ## 🌐 Connect with Me
 
